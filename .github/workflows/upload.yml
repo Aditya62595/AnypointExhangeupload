@@ -25,6 +25,6 @@ jobs:
         method: 'POST'
         bearerToken: '4d8a7855-5da7-433b-893a-09e5c1e8fff3'
         customHeaders: '{"Content-Type": "text/markdown"}'
-        file: "${{ github.workspace }}/sample.md"
+        file: "${{ github.workspace }}/file.md"
 
       
