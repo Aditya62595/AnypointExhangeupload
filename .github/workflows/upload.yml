@@ -18,6 +18,13 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
+    - name: Read file contents
+      id: read_file
+      uses: andstor/file-reader-action@v1
+      with:
+          path: "file.md"
+    - name: File contents
+      run: echo "${ steps.read_file.outputs.contents }"
     - name: Deploy Stage
       uses: fjogeleit/http-request-action@v1.10.0
       with:
