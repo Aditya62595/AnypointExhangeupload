@@ -18,8 +18,6 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-    - name: File Reader
-      uses: andstor/file-reader-action@v1.0.0
     - name: Deploy Stage
       uses: fjogeleit/http-request-action@v1.10.0
       with:
